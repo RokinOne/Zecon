@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: white; }
+
+input {
+  height: 60px;
+  border: none;
+  padding: 4px;
+  background: #234; }
+  
+h1 {
+  font-size: 40px;    
+}
+  
+#wiac {
+  display: block;
+  position: fixed;
+  left: 0; top: 0;
+  width: 60px;
+  height: 60px;
+}
+  
+#info {
+  position: fixed;
+  right: 0; top: 0;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  font-size: small;
+  background: #234;
+}
+#info button {
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: #234;
+}
+#info button:hover {
+  background: #345;
+}
+#info p {
+  text-align: left;
+}
+
+#zecon {
+  width: 100vw;
+  height: 100vh;
+  background: #123; }
+
+#equation {
+  display:block;
+  position: absolute;
+  top: 50%; left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  font-size: xx-large;
+}
+
+#dec, #doz {
+  width: 100%;
+  max-width: 300px;
+  height: 60px;
+  font-size: xx-large;
+}
+
+#numpad {
+  display: inline-block;
+  position: fixed;
+  max-width: 300px;
+  font-size: 0;
+  bottom: 0; right: 0; }
+
+#numpad button {
+  width: 60px;
+  height: 60px;
+  font-size: normal;
+  background: #234;
+  display: none;
+  font-size: x-large;
+}
+#numpad button:hover { background: #345; }
+
+#numpadButton {
+  display: inline-block !important;
+  background: #234;
+}
+
+#notation {
+  background: #234;
+  text-align: center;
+  padding: 4px;
+  border: 0;
+  position: fixed;
+  left: 0; bottom: 0;
+  width: 60px;
+  height: 60px;
+  font-size: x-large;
+}
+#notation:hover { background: #345; }
+
+.eq-part {
+  display: inline-block;
+  min-width:50px;
+}
+@media screen and (max-width: 700px) { .eq-part { display: block; } }
+
+.valid { background: #234; }
+.valid:focus { background: #345; }
+.invalid { background: #923; }
+.invalid:focus { background: #a34; }
