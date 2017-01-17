@@ -1,0 +1,72 @@
+<meta charset="utf-8">
+<title>Zecon</title>
+<link rel="stylesheet" href="zecon.css">
+
+<body id="zecon">
+  <a href="http://worldisacube.net" id="wiac">
+    <svg
+     width="50"
+     height="50"
+     viewBox="0 0 600 600"
+     id="rrr">
+    <g>
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#006a50;stroke-width:48;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 60,0 260,200 60,400 260,600"/>
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#006a50;stroke-width:48;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 200,0 400,200 200,400 400,600"/>
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#006a50;stroke-width:48;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 341.42857,-1.4285703 200.00001,200.0000003 -200.00001,200 200.00001,200"/>
+    </g>
+  </svg>
+  </a>
+  <h1>ZECON</h1>
+  <div id="info">
+    <button onclick="toggleInfo()">i</button>
+    <p>Zecon is a converter tool for base 10 (decimal) and base 12 (duodecimal or dozenal) numbers.</p>
+    <p>It accepts digits, fractional point and the minus sign for negative values. For dozenal value, digits representing 10 can be a, A, t or T and for 11 b, B, e or E.</p>
+    <p>There is an option to select notation and a virtual numpad for mouse-only use.</p>
+  </div>
+  
+  <div id="equation">
+    <div class="eq-part">
+      <input id="dec" type="text" onfocus="focusEl(dec)" onkeyup="updateDoz()" placeholder="decimal">
+    </div>
+    
+    <div class="eq-part"> = </div>
+    
+    <div class="eq-part">
+      <input id="doz" type="text" onfocus="focusEl(doz)" onkeyup="updateDec()" placeholder="dozenal">
+    </div>
+  </div>
+
+  <select id="notation">
+    <option onclick="switchSet(1)">AB</option>
+    <option onclick="switchSet(2)">ab</option>
+    <option onclick="switchSet(3)">TE</option>
+    <option onclick="switchSet(4)">te</option>
+    <option onclick="switchSet(0)">ᘔƐ</option>
+  </select>
+  
+  <div id="numpad">
+    <button onclick="update(this)">1</button>
+    <button onclick="update(this)">2</button>
+    <button onclick="update(this)">3</button>
+    <button onclick="update(this)">4</button>
+    <button onclick="update(this)">-</button>
+    <button onclick="update(this)">5</button>
+    <button onclick="update(this)">6</button>
+    <button onclick="update(this)">7</button>
+    <button onclick="update(this)">8</button>
+    <button onclick="update(this)">.</button>
+    <button onclick="update(this)">9</button>
+    <button onclick="update(this)">A</button>
+    <button onclick="update(this)">B</button>
+    <button onclick="update(this)">0</button>
+    <button id="numpadButton" onclick="toggleNumpad()">#</button>
+  </div>
+
+  <script src="zecon.js"></script>
+</body>
