@@ -6,6 +6,10 @@
   font-family: sans-serif;
   color: white; }
 
+html {
+  border-top: solid 6px #006a50;
+}
+
 input {
   height: 60px;
   border: none;
@@ -18,8 +22,8 @@ h1 {
   
 #wiac {
   display: block;
-  position: fixed;
-  left: 0; top: 0;
+  position: absolute;
+  left: 0;
   width: 60px;
   height: 60px;
 }
