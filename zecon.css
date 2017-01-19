@@ -6,6 +6,10 @@
   font-family: sans-serif;
   color: white; }
 
+html {
+  border-top: solid 6px #006a50;
+}
+
 input {
   height: 60px;
   border: none;
